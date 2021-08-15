@@ -23,7 +23,7 @@ class DefaultTextFormField extends StatefulWidget {
 
 class _DefaultTextFormFieldState extends State<DefaultTextFormField> {
   IconData suffix = Icons.visibility_off;
-  bool isSuffix = true;
+  bool isShown= true;
   bool visable = true;
 
   @override
@@ -51,8 +51,8 @@ class _DefaultTextFormFieldState extends State<DefaultTextFormField> {
                         onPressed: () {
                           setState(() {
                             visable = !visable;
-                            isSuffix = !isSuffix;
-                            isSuffix
+                            isShown = !isShown;
+                            isShown
                                 ? suffix = Icons.visibility
                                 : suffix = Icons.visibility_off;
                           });

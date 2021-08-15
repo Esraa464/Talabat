@@ -17,7 +17,7 @@ class DeliveringTo extends StatelessWidget {
       key: scaffoldKey,
       drawer: Container(
           width: MediaQuery.of(context).size.width * .8,
-          child: Drawer(child: DeliveryDrawer())),
+          child: Drawer(child: DrawerView())),
       backgroundColor: Colors.white,
       appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.black),
