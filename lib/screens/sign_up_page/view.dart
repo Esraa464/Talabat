@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:login_screen/const/colors.dart';
 import 'package:login_screen/const/strings.dart';
 import 'package:login_screen/screens/login_with_email_page/view.dart';
 import 'package:login_screen/widgets/app_bar.dart';
-import 'package:login_screen/widgets/login_button.dart';
+import 'package:login_screen/screens/sign_up_page/widgets/login_button.dart';
 
-class SignInScreen extends StatelessWidget {
+class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +23,7 @@ class SignInScreen extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 50,
                       fontWeight: FontWeight.bold,
-                      color: Colors.deepOrange,
+
                     )),
                 Text(txt_app_hint,
                     style: TextStyle(

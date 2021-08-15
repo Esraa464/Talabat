@@ -14,7 +14,6 @@ Widget loginButton(
       margin: const EdgeInsets.only(top: 15),
       child: Row(children: [
         Container(
-          // padding: const EdgeInsets.only(right: 5),
           width: 25,
           height: 25,
           decoration: BoxDecoration(

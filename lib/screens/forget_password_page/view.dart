@@ -27,6 +27,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
             children: [
               DefaultTextFormField(
                   type: TextInputType.emailAddress,
+                  isHidden: true,
                   hintTxt: email,
                   validator: (value) {
                     if (value.isEmpty) {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_screen/const/colors.dart';
 
 class DefaultTextFormField extends StatefulWidget {
   final validator;
@@ -47,7 +48,7 @@ class _DefaultTextFormFieldState extends State<DefaultTextFormField> {
                 hintText: widget.hintTxt,
                 suffixIcon: widget.isHidden
                     ? IconButton(
-                        icon: Icon(suffix),
+                        icon: Icon(suffix,color: mainColor,),
                         onPressed: () {
                           setState(() {
                             visable = !visable;

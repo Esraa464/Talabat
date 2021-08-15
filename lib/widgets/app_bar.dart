@@ -11,11 +11,9 @@ Widget appBar (text){
  //    ),
     title: Padding(
       padding: const EdgeInsets.only(right: 36),
-      child: Center(
-        child: Text(
-         text,
-          style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600,fontSize: 18),
-        ),
+      child: Text(
+       text,
+        style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600,fontSize: 18),
       ),
     ),
     backgroundColor: Colors.white,

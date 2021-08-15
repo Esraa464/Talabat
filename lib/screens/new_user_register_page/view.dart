@@ -36,7 +36,6 @@ class _NewUserRegisterState extends State<NewUserRegister> {
                 style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
               ),
               DefaultTextFormField(
-
                   hintTxt: firstName,
                   type: TextInputType.text,
                   validator: (value) {
@@ -44,10 +43,8 @@ class _NewUserRegisterState extends State<NewUserRegister> {
                       return 'First Name must not be empty';
                     }
                     return null;
-                  }
-                  ),
+                  }),
               DefaultTextFormField(
-
                   hintTxt: lastName,
                   type: TextInputType.text,
                   validator: (value) {
@@ -57,7 +54,6 @@ class _NewUserRegisterState extends State<NewUserRegister> {
                     return null;
                   }),
               DefaultTextFormField(
-
                   hintTxt: email,
                   type: TextInputType.emailAddress,
                   validator: (value) {
@@ -65,10 +61,10 @@ class _NewUserRegisterState extends State<NewUserRegister> {
                       return 'Email must not be empty';
                     }
                     return null;
-                  }
-                  ),
+                  }),
               DefaultTextFormField(
-                 isPassword: true,
+                  isHidden: true,
+                  isPassword: true,
                   hintTxt: choose_password,
                   type: TextInputType.visiblePassword,
                   validator: (value) {

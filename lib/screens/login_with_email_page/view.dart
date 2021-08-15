@@ -6,7 +6,7 @@ import 'package:login_screen/widgets/app_bar.dart';
 import 'package:login_screen/widgets/bold_font.dart';
 import 'package:login_screen/widgets/custom_normal_font.dart';
 import 'package:login_screen/widgets/default_text_form_field.dart';
-import 'package:login_screen/widgets/login_button.dart';
+import 'package:login_screen/screens/sign_up_page/widgets/login_button.dart';
 import 'package:login_screen/widgets/main_button.dart';
 
 class LoginWithEmail extends StatefulWidget {
@@ -45,6 +45,7 @@ class _LoginWithEmailState extends State<LoginWithEmail> {
                   }),
               DefaultTextFormField(
                   isPassword: true,
+                  isHidden: true,
                   hintTxt: password,
                   type: TextInputType.visiblePassword,
                   validator: (value) {

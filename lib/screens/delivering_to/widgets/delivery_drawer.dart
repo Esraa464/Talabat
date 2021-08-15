@@ -67,10 +67,10 @@ class _DrawerState extends State<DrawerView> {
                           ? Colors.deepPurple
                           : Colors.white,
                       borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(5),
-                          bottomRight: Radius.circular(5))),
-                  width: 5,
-                  height: 30,
+                          topRight: Radius.circular(7),
+                          bottomRight: Radius.circular(7))),
+                  width:6,
+                  height: 45,
                 ),
                 Expanded(
                   child: ListTile(
