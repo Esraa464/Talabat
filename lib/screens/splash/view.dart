@@ -25,14 +25,18 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-          'talabat',
-          style: TextStyle(
-              fontSize: 70, fontWeight: FontWeight.bold, color: Colors.white),
-        ),
-            Text(
-             ' "Food delivery platform for expo 2020"',
+              'talabat',
               style: TextStyle(
-                  fontSize: 10, fontWeight: FontWeight.w900,),
+                  fontSize: 70,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
+            ),
+            Text(
+              ' "Food delivery platform for expo 2020"',
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.w900,
+              ),
             ),
           ],
         ),

@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:login_screen/const/strings.dart';
 
-class RatingColumn extends StatelessWidget {
+class RatingRow extends StatelessWidget {
   String text;
-  RatingColumn(this.text);
+  RatingRow(this.text);
   @override
   Widget build(BuildContext context) {
     return Row(
-      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(orderPackaging),
         RatingBar.builder(
@@ -19,7 +18,7 @@ class RatingColumn extends StatelessWidget {
           allowHalfRating: true,
           itemCount: 5,
           // itemPadding: EdgeInsets.symmetric(horizontal: 2.0),
-          itemBuilder: (context, _) => Icon(
+          itemBuilder: (context,index) => Icon(
             Icons.star,
             color: Colors.deepPurple,
           ),

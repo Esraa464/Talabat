@@ -4,9 +4,11 @@ import 'package:flutter/rendering.dart';
 import 'package:login_screen/const/colors.dart';
 import 'package:login_screen/const/fonts.dart';
 import 'package:login_screen/screens/delivering_to/widgets/delivery_drawer.dart';
+import 'package:login_screen/screens/delivering_to/widgets/filters_buttom_sheet.dart';
 import 'package:login_screen/screens/delivering_to/widgets/image_container.dart';
 import 'package:login_screen/screens/delivering_to/widgets/images_slider.dart';
 import 'package:login_screen/screens/delivering_to/widgets/searchForRestaurants_page.dart';
+import 'package:login_screen/screens/delivering_to/widgets/search_cuisine.dart';
 
 class DeliveringTo extends StatelessWidget {
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
@@ -66,14 +68,15 @@ class DeliveringTo extends StatelessWidget {
                   InkWell(
                     onTap: () => showModalBottomSheet(
                         context: context,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: const BorderRadius.only(
+                          topLeft: Radius.circular(25),
+                          topRight: Radius.circular(25),
+                        )),
                         isScrollControlled: true,
                         builder: (context) => Container(
-                              height: MediaQuery.of(context).size.height*0.85,
-                             decoration: BoxDecoration(borderRadius: BorderRadius.only(
-                               topLeft: Radius.circular(25),
-                               topRight: Radius.circular(25),
-                             )),
-
+                              height: MediaQuery.of(context).size.height * 0.85,
+                              child: FiltersButtonSheet(),
                             )),
                     child: Row(
                       children: [
@@ -83,6 +86,18 @@ class DeliveringTo extends StatelessWidget {
                     ),
                   ),
                   InkWell(
+                    onTap: ()=> showModalBottomSheet(
+                        context: context,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(25),
+                              topRight: Radius.circular(25),
+                            )),
+                        isScrollControlled: true,
+                        builder: (context) => Container(
+                          height: MediaQuery.of(context).size.height * 0.85,
+                          child: SearchCuisine(),
+                        )),
                     child: Row(
                       children: [
                         Icon(Icons.ac_unit_rounded),

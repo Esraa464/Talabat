@@ -4,7 +4,9 @@ class Reviews  extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(itemBuilder:(context,index)=>Column(
+    return ListView.builder(
+        // shrinkWrap: true,
+        itemBuilder:(context,index)=>Column(
       children: [
         Row(children: [
           Text('Amazing'),

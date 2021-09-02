@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:login_screen/const/colors.dart';
 import 'package:login_screen/const/strings.dart';
 import 'package:login_screen/screens/rating_and_reviews/widgets/rating_bar_column.dart';
 import 'package:login_screen/screens/rating_and_reviews/widgets/reviews.dart';
@@ -10,9 +8,9 @@ class RatingAndReviews extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: appBar(ratingAndReviews),
       body: ListView(
-        // padding: ,
         children: [
           Row(
             children: [
@@ -21,10 +19,10 @@ class RatingAndReviews extends StatelessWidget {
             ],
           ),
           Text(basedOn),
-          RatingColumn(orderPackaging),
-          RatingColumn(valueForMoney),
-          RatingColumn(deliveryTime),
-          RatingColumn(qualityOfFood),
+          RatingRow(orderPackaging),
+          RatingRow(valueForMoney),
+          RatingRow(deliveryTime),
+          RatingRow(qualityOfFood),
           Reviews()
         ],
       ),
